@@ -1,0 +1,50 @@
+# Secrets
+.env
+.env.*
+!.env.example
+!.env.production.example
+
+# Python
+.venv/
+venv/
+**/__pycache__/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Django — do not commit migrations or runtime artifacts
+**/migrations/
+media/
+staticfiles/
+*.sqlite3
+db.sqlite3
+
+
+# Test / coverage / tooling
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.cache/
+**/_perf_baselines/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Celery / runtime
+celerybeat-schedule
+celerybeat.pid
+*.log
